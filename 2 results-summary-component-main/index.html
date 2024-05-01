@@ -3,45 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
 
-  Your Result
-  76
-  of 100
+<div class="main-container">
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+  <div class="header-container">
+    <div class="title-result">Your Result</div>
+    <div class="main-number"> 76
+       <p>of 100</p>
+    </div>
+    <div class="great"> Great </div>
+    <p class="text">You scored higher than 65% of the people who have taken these tests.</p>
+  </div>
 
-  Reaction
-  80 / 100
+  <div class="summary-contain">
+    <h4>Summary</h4>
 
-  Memory
-  92 / 100
+    <div class="card background-card-react">
+      <img src="./assets/images/icon-reaction.svg" alt="reaction">
+      <div class="icon-title"> Reaction </div>
+      <div class="values"> 80 <span>/ 100</span> </div>
+    </div>
 
-  Verbal
-  61 / 100
+    <br>
 
-  Visual
-  72 / 100
+    <div class="card background-card-memory">
+      <img src="./assets/images/icon-memory.svg" alt="memory">
+      <div class="icon-title orange"> Memory </div>
+      <div class="values">92 <span>/ 100</span></div>
+    </div>
+    
+    <br>
+    
+    <div class="card background-card-verbal">
+      <img src="./assets/images/icon-verbal.svg" alt="verbal">
+      <div class="icon-title green">Verbal</div>
+      <div class="values">61 <span>/ 100</span></div>
+    </div>
+    
+    <br>
+    
+    <div class="card background-card-visual">
+      <img src="./assets/images/icon-visual.svg" alt="visual">
+      <div class="icon-title navy">Visual</div>
+      <div class="values">72 <span>/ 100</span></div>
+    </div>
 
-  Continue
-  
+    <br>
+
+    <div class="button"> Continue </div>
+  </div>
+
+</div>
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Omar Landaeta - 2024</a>.
   </div>
 </body>
 </html>
