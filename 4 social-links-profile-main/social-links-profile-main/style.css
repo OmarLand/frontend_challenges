@@ -1,0 +1,147 @@
+@media (min-width: 1440px) {
+
+        
+    html, body{
+    
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+        background-color : hsl(0, 0%, 8%);
+        color            : white;
+        padding          : 0px;
+        margin-top           : 3%;
+        font-weight      : bold;
+        
+    }
+
+    p{
+        font-size   : 14px;
+        font-weight : 400;
+    }
+
+    .main-content{
+        
+        /* border           : 1px solid red; */
+        background-color : #1F1F1F;
+        text-align       : center;
+        height           : auto;
+        width            : 350px;
+        border-radius    : 8px;
+        
+    }
+
+    img{
+        border-radius: 100px;
+        width: 40%;
+        margin-top: 35px;
+    }
+
+    .text-color{
+        color: hsl(75, 94%, 57%);
+        font-family: 600;
+    }
+
+
+    .social{
+        /* border: 1px solid red; */
+        display        : flex;
+        flex-direction : column;
+        justify-self   : center;
+        width          : 280px;
+        padding        : 10px;
+        margin         : 10px;
+    }
+
+    button{
+        background-color : hsl(0, 0%, 20%);
+        color            : white;
+        width            : 100%;
+        font-weight      : 700;
+        border-radius    : 8px;
+        margin           : 5px;
+        padding          : 10px;
+        border           : none;
+    }
+
+    button:hover{
+        background-color : hsl(75, 94%, 57%);
+        color            : black;
+    
+    }
+    
+}
+
+@media (min-width: 345px) {
+
+        
+    html, body{
+    
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+        background-color : hsl(0, 0%, 8%);
+        color            : white;
+        padding          : 0px;
+        margin-top           : 3%;
+        font-weight      : bold;
+        
+    }
+
+    p{
+        font-size   : 14px;
+        font-weight : 400;
+    }
+
+    .main-content{
+        
+        /* border           : 1px solid red; */
+        background-color : #1F1F1F;
+        text-align       : center;
+        height           : auto;
+        width            : 350px;
+        border-radius    : 8px;
+        
+    }
+
+    img{
+        border-radius: 100px;
+        width: 40%;
+        margin-top: 35px;
+    }
+
+    .text-color{
+        color: hsl(75, 94%, 57%);
+        font-family: 600;
+    }
+
+
+    .social{
+        /* border: 1px solid red; */
+        display        : flex;
+        flex-direction : column;
+        justify-self   : center;
+        width          : 280px;
+        padding        : 10px;
+        margin         : 10px;
+    }
+
+    button{
+        background-color : hsl(0, 0%, 20%);
+        color            : white;
+        width            : 100%;
+        font-weight      : 700;
+        border-radius    : 8px;
+        margin           : 5px;
+        padding          : 10px;
+        border           : none;
+    }
+
+    button:hover{
+        background-color : hsl(75, 94%, 57%);
+        color            : black;
+    
+    }
+    
+}
