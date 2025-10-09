@@ -1,0 +1,51 @@
+@media (min-width: 350px) {
+    
+    body {
+        background-color : hsl(243, 96%, 9%);
+        color            : white;
+        font-size        : 18px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .title{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px
+    }
+    
+    .units-personal{
+        background-color: hsl(243, 27%, 20%);
+        border: none;
+        color: white;
+    }
+
+    .btn-personal{
+        width: 70%;
+        margin: 10px;
+    }
+
+    .weather-img{
+        width: 50%;
+    }
+
+    h1{
+        font-size: 60px;
+        text-align: center;
+        padding: 8px;
+    }
+
+    .search-personal{
+        text-align: center;
+    }
+
+
+    /* Tarjetas */
+    
+
+    
+}
+
+@media (min-width: 1440px) {
+    
+}

@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">  
   <title>Frontend Mentor | Weather app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -13,54 +14,81 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+
 </head>
 <body>
 
-  Units
+  <div class="head">
 
-  Switch to Imperial/Metric
 
-  Temperature
+    <div class="dropdown title">
 
-  Celsius (°C)
-  Fahrenheit (°F)
+      <img class="weather-img" src="./assets/images/logo.svg" alt="units">
+      <button class="btn btn-secondary units-personal" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="./assets/images/icon-units.svg" alt="units">
+        Units
+        <img src="./assets/images/icon-dropdown.svg" alt="">
+      </button>
+      
+      <ul class="dropdown-menu units-personal">
+      
+        <li><a href="#" class="dropdown-item"></a>Switch to Imperial/Metric</li>
+        <li><a href="#" class="dropdown-item"></a>Temperature</li>
+        <li><a href="#" class="dropdown-item"></a>Celsius (°C)</li>
+        <li><a href="#" class="dropdown-item"></a>Fahrenheit (°F)</li>
+        <li><a href="#" class="dropdown-item"></a>Wind Speed</li>
+        <li><a href="#" class="dropdown-item"></a>km/h</li>
+        <li><a href="#" class="dropdown-item"></a>mph</li>
+        <li><a href="#" class="dropdown-item"></a>Precipitation</li>
+        <li><a href="#" class="dropdown-item"></a>Millimeters (mm)</li>
+        <li><a href="#" class="dropdown-item"></a>Inches (in)</li>
 
-  Wind Speed
+      </ul>
 
-  km/h
-  mph
+    </div>
 
-  Precipitation
+  </div>
 
-  Millimeters (mm)
-  Inches (in)
 
-  How's the sky looking today?
+  <h1>How's the sky looking today?</h1>
 
-  Search for a city, e.g., New York
-  Search
+  
+  <div class="search-personal">
+    <form class="d-flex" role="search">
+      <img src="./assets/images/icon-search.svg" alt="search">
+      <input class="form-control me-2" type="search"  placeholder="Search for a city, e.g., New York">
+    </form>
+  
+    <div class="btn btn-primary btn-personal"> Search </div>
+    
+  </div>
+
+  <br>
 
   Feels like
   <!-- Insert temperature here -->
-
   Humidity
   <!-- Insert humidity here -->
 
   Wind
   <!-- Insert wind here -->   
-  
+
   Precipitation
   <!-- Insert precipitation here -->
 
   Daily forecast
   <!-- Insert daily forecast for the next 7 days here -->
-
   Hourly forecast
   <!-- Insert hourly forecast for the selected day here -->
+      
+
+  </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="./js/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
