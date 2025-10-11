@@ -1,51 +1,177 @@
 @media (min-width: 350px) {
-    
+
     body {
         background-color : hsl(243, 96%, 9%);
         color            : white;
         font-size        : 18px;
-        padding: 0px;
-        margin: 0px;
+        padding          : 0px;
+        margin           : 0px;
     }
 
     .title{
-        display: flex;
-        justify-content: space-between;
-        padding: 15px
+        display         : flex;
+        justify-content : space-between;
+        padding         : 15px
     }
-    
+
     .units-personal{
-        background-color: hsl(243, 27%, 20%);
-        border: none;
-        color: white;
+        background-color : hsl(243, 27%, 20%);
+        border           : none;
+        color            : white;
     }
 
     .btn-personal{
-        width: 70%;
-        margin: 10px;
+        width       : 100%;
+        height      : 40px;
+        margin-top  : 10px;
     }
 
     .weather-img{
-        width: 50%;
+        width       : 50%;
     }
 
     h1{
-        font-size: 60px;
-        text-align: center;
-        padding: 8px;
+        font-size  : 60px;
+        text-align : center;
+        padding    : 8px;
     }
 
     .search-personal{
-        text-align: center;
+        /* border: 1px solid red; */
+        color          : white;
+        text-align     : center;
+        display        : flex;
+        justify-self   : center;
+        flex-direction : column;
+        width          : 90%;
+    }
+
+    .content-searching{
+        /* border: 1px solid red; */
+        background-color : hsl(243, 27%, 20%);
+        width            : 100%;
+        height           : 55px;
+        border-radius    : 8px;
+        padding          : 8px;
+        margin-top       : 10px;
+        color            :white;
+
+    }
+
+    .form-text-personal::placeholder{
+        color            : white;
+    }
+
+    .form-text-personal{
+        background-color : hsl(243, 27%, 20%);
+        border           : none;
+
+    }
+
+    .background-weather{
+        /* border: 1px solid red; */
+        margin            : 20px;
+        margin-bottom     : -15px;
+        width             : 90%;
+        height            : 281px;
+        background-image  : url(../assets/images/bg-today-small.svg);
+        background-size   : contain;
+        background-repeat : no-repeat;
     }
 
 
     /* Tarjetas */
-    
+    .contain-cards{
+        /* border     : 3px solid red; */
+        padding    : 5px;
+        margin-top : -10px;
+        /* width: 80%; */
+        
 
-    
-}
+    }
 
-@media (min-width: 1440px) {
+    .personal-card{
+        background-color : hsl(243, 27%, 20%);
+        color            : white;
+        border-radius    : 8px;
+    }
+
+    .card-title{
+        font-size  : 18px;
+    }
+
+    .card{
+        /* border     : 1px solid red; */
+        margin-top : 15px;
+        width      : 165px;
+        
+    }
+
+    .forecast-contain{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .card-daily{
+        /* border           : 1px solid red; */
+        width            : 95px;
+        background-color : hsl(243, 27%, 20%);
+        color            : white;
+        border-radius    : 8px;
+        margin-top: 2px;
+        padding          : 5px;
+    }
+
+    .temp{
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .col-daily{
+        margin-right: -10px
+    }
+
+    .hourly-content{
+        /* border: 1px solid red; */
+        background-color : hsl(243, 27%, 20%);
+        border-radius    : 8px;
+        padding          : 8px;
+    }
     
+    .days-personal{
+        /* border: 1px solid red; */
+        border           : none;
+        background-color : hsl(243, 23%, 30%);
+        color            : white;
+        padding-top      : 4px;
+        padding-left     : 10px;
+        margin-top       : -5px;
+  
+    }
+
+    .button-days{
+        margin-top  : -3px;
+        height      : 35px;
+    }
+
+    .card-hourly{
+        /* border           : 1px solid red; */
+        display          : flex;
+        flex-direction   : row;
+        background-color : hsl(243, 23%, 30%);
+        color            : white;
+        width            : 100%;
+        height           : 45px;
+
+    }
+
+    .flexing{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: -11px;
+    }
+
 }
