@@ -15,9 +15,17 @@
     }
 
     .units-personal{
+        /* border           : 1px solid red; */
         background-color : hsl(243, 27%, 20%);
         border           : none;
         color            : white;
+
+    }
+
+    .units-personal-content{
+        /* border        : 1px solid red; */
+        padding       : 10px;
+        font-size     : 15px;
     }
 
     .btn-personal{
@@ -134,6 +142,205 @@
 
     .hourly-content{
         /* border: 1px solid red; */
+        background-color : hsl(243, 27%, 20%);
+        border-radius    : 8px;
+        padding          : 8px;
+    }
+    
+    .days-personal{
+        /* border: 1px solid red; */
+        border           : none;
+        background-color : hsl(243, 23%, 30%);
+        color            : white;
+        padding-top      : 4px;
+        padding-left     : 10px;
+        margin-top       : -5px;
+  
+    }
+
+    .button-days{
+        margin-top  : -3px;
+        height      : 35px;
+    }
+
+    .card-hourly{
+        /* border           : 1px solid red; */
+        display          : flex;
+        flex-direction   : row;
+        background-color : hsl(243, 23%, 30%);
+        color            : white;
+        width            : 100%;
+        height           : 45px;
+
+    }
+
+    .flexing{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: -11px;
+    }
+
+}
+
+@media ( min-width: 900px ) {
+    body {
+        background-color : hsl(243, 96%, 9%);
+        color            : white;
+        font-size        : 18px;
+        padding          : 0px;
+        margin           : 0px;
+    }
+
+    .title{
+        display         : flex;
+        justify-content : space-between;
+        padding         : 15px
+    }
+
+    .units-personal{
+        /* border           : 1px solid red; */
+        background-color : hsl(243, 27%, 20%);
+        border           : none;
+        color            : white;
+        height           : 35px;
+        /* padding: 5px */
+        
+    }
+    
+    .units-personal-content{
+        /* border        : 1px solid red; */
+        background-color : hsl(243, 27%, 20%);
+        color            : white;
+        padding          : 10px;
+        font-size        : 15px;
+    }
+
+    
+    .weather-img{
+        width       : 15%;
+    }
+
+    h1{
+        font-size  : 50px;
+        text-align : center;
+        padding    : 8px;
+    }
+
+    .search-personal{
+        /* border         : 1px solid red; */
+        display        : flex;
+        justify-self   : center;
+        flex-direction : row;
+        color          : white;
+        text-align     : center;
+        width          : 40%;
+        height         : 45px;
+        margin-top     : 18px;
+
+    }
+
+    .content-searching{
+        /* border           : 1px solid red; */
+        background-color : hsl(243, 27%, 20%);
+        height           : 45px;
+        border-radius    : 8px;
+        padding          : 8px;
+        margin-top       : 8px;
+        color            :white;
+
+    }
+
+    .btn-personal{
+        /* border      : 1px solid red; */
+        width       : 20%;
+        height      : 40px;
+        margin-top  : 10px;
+        margin-left : 15px;
+    }
+
+    
+    .form-text-personal::placeholder{
+        color            : white;
+    }
+
+    .form-text-personal{
+        /* border        : 1px solid red; */
+        /* width         : 850px; */
+        border           : none;
+        background-color : hsl(243, 27%, 20%);
+        margin-top       : -4px;
+        margin-left      : 8px;
+    }
+
+    .background-weather{
+        /* border       : 1px solid red; */
+        margin-left  : 165px;
+        margin-top   : 38px;
+        /* margin-bottom     : -15px; */
+        /* width             : 100%; */
+        height            : 280px;
+        background-image  : url(../assets/images/bg-today-large.svg);
+        background-size   : contain;
+        background-repeat : no-repeat;
+    }
+
+
+    /* Tarjetas */
+    .contain-cards{
+        /* border     : 3px solid red; */
+        padding    : 5px;
+        margin-top : -10px;
+        /* width: 80%; */
+        
+
+    }
+
+    .personal-card{
+        background-color : hsl(243, 27%, 20%);
+        color            : white;
+        border-radius    : 8px;
+    }
+
+    .card-title{
+        font-size  : 18px;
+    }
+
+    .card{
+        /* border     : 1px solid red; */
+        margin-top : 15px;
+        width      : 165px;
+        
+    }
+
+    .forecast-contain{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .card-daily{
+        /* border           : 1px solid red; */
+        width            : 95px;
+        background-color : hsl(243, 27%, 20%);
+        color            : white;
+        border-radius    : 8px;
+        margin-top: 2px;
+        padding          : 5px;
+    }
+
+    .temp{
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .col-daily{
+        margin-right: -10px
+    }
+
+    .hourly-content{
+        border: 1px solid red;
         background-color : hsl(243, 27%, 20%);
         border-radius    : 8px;
         padding          : 8px;
