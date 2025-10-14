@@ -94,7 +94,7 @@
         padding    : 5px;
         margin-top : -10px;
         /* width: 80%; */
-        
+
 
     }
 
@@ -112,7 +112,7 @@
         /* border     : 1px solid red; */
         margin-top : 15px;
         width      : 165px;
-        
+
     }
 
     .forecast-contain{
@@ -146,7 +146,7 @@
         border-radius    : 8px;
         padding          : 8px;
     }
-    
+
     .days-personal{
         /* border: 1px solid red; */
         border           : none;
@@ -155,7 +155,7 @@
         padding-top      : 4px;
         padding-left     : 10px;
         margin-top       : -5px;
-  
+
     }
 
     .button-days{
@@ -206,9 +206,9 @@
         color            : white;
         height           : 35px;
         /* padding: 5px */
-        
+
     }
-    
+
     .units-personal-content{
         /* border        : 1px solid red; */
         background-color : hsl(243, 27%, 20%);
@@ -217,7 +217,7 @@
         font-size        : 15px;
     }
 
-    
+
     .weather-img{
         width       : 15%;
     }
@@ -241,6 +241,7 @@
 
     }
 
+    /* Campo busqueda */
     .content-searching{
         /* border           : 1px solid red; */
         background-color : hsl(243, 27%, 20%);
@@ -260,7 +261,7 @@
         margin-left : 15px;
     }
 
-    
+
     .form-text-personal::placeholder{
         color            : white;
     }
@@ -276,61 +277,64 @@
 
     .background-weather{
         /* border       : 1px solid red; */
-        /* margin-right: 10%; */
-        /* margin-bottom     : -15px; */
-        margin-left  : 135px;
-        margin-top   : 38px;
+        margin-left       : 135px;
+        margin-top        : 38px;
         width             : 810px;
         height            : 290px;
         background-image  : url(../assets/images/bg-today-large.svg);
-        background-size   : auto;
+        /* background-size   : auto; */
         background-repeat : no-repeat;
     }
 
 
     /* Tarjetas */
     .contain-cards{
-        border     : 1px solid red;
-        display: flex;
-        flex-direction: row;
-        /* padding    : 5px; */
-        /* margin-top : -10px; */
-        width: 62%;
-        
-
+        /* border      : 1px solid red; */
+        display        : flex;
+        flex-direction : row;
+        align-content  : space-around;
+        margin-top     : 8px;
+        margin-left    : 125px;
+        width          : 53%;
     }
 
+
+    /* Color fondo y letra de cards */
     .personal-card{
+        /* border: 1px solid red; */
         background-color : hsl(243, 27%, 20%);
         color            : white;
         border-radius    : 8px;
     }
 
     .card-title{
-        font-size  : 18px;
+        font-size  : 15px;
     }
 
     .card{
         /* border     : 1px solid red; */
-        margin-top : 15px;
-        width      : 165px;
-        
+        margin     : 5px;
+        padding    : 5px;
+        width      : 190px;
     }
 
+
     .forecast-contain{
+        /* border: 1px solid red; */
         display: flex;
         flex-direction: row;
         justify-content: center;
         margin: 20px;
     }
 
+    /* Tarjetas daily forecast */
     .card-daily{
         /* border           : 1px solid red; */
         width            : 95px;
         background-color : hsl(243, 27%, 20%);
         color            : white;
         border-radius    : 8px;
-        margin-top: 2px;
+        margin           : 5px;
         padding          : 5px;
     }
 
@@ -348,12 +352,13 @@
         background-color : hsl(243, 27%, 20%);
         border-radius    : 15px;
         width            : 25%;
-        padding          : 8px;
-        margin-top       : -586px;
-        margin-bottom    : 470px;
-        margin-left      : 30%;
+        padding          : 10px;
+        padding-right    : 20px;
+        margin-top       : -447px;
+        margin-bottom    : 400px;
+        margin-left      : 29%;
     }
-    
+
     .days-personal{
         /* border: 1px solid red; */
         border           : none;
@@ -362,7 +367,7 @@
         padding-top      : 4px;
         padding-left     : 10px;
         margin-top       : -5px;
-  
+
     }
 
     .button-days{
