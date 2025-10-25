@@ -1,5 +1,5 @@
 /* Pantallas moviles */
-@media (min-width: 350px) {
+@media screen and (min-width: 350px) {
 
     body {
         background-color : hsl(243, 96%, 9%);
@@ -186,10 +186,290 @@
 }
 
 /* Pantallas tablets */
-/* @media (){} */
+@media (min-width: 768px) and (max-width: 1023px){
+    body {
+        background-color : hsl(243, 96%, 9%);
+        color            : white;
+        font-size        : 18px;
+        padding          : 0px;
+        margin           : 0px;
+        height           : 100%;
+    }
+
+    section{
+        /* border        : 1px solid red; */
+        width         : 100%;
+        margin-top    : 5px;
+        display       : flex;
+        flex-direction: column;
+        flex          : 3;
+        /* margin-right  : 20px; */
+    }
+
+    article{
+        /* border          : 1px solid red;  */
+        display         : flex;
+        justify-content : start;
+        margin-bottom   : 5px;
+        margin-left     : 65px;
+        margin-top      : 15px;
+        padding         : 20px;
+    }
+
+    .containing{
+        display:flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .main-content{
+        /* border: 1px solid red; */
+        display: flex;
+        flex   : 1;
+        padding: 20px;
+    }
+
+
+    .title{
+        display         : flex;
+        justify-content : space-between;
+        padding         : 15px
+    }
+
+    .units-personal{
+        /* border           : 1px solid red; */
+        background-color : hsl(243, 27%, 20%);
+        border           : none;
+        color            : white;
+        height           : 35px;
+    }
+
+    .units-personal-content{
+        /* border        : 1px solid red; */
+        background-color : hsl(243, 27%, 20%);
+        color            : white;
+        padding          : 10px;
+        font-size        : 15px;
+    }
+
+
+    /* Icono encabezado */
+    .weather-img{
+        width       : 20%;
+    }
+
+    /* Texto central de pagina */
+    h1{
+        font-size  : 50px;
+        text-align : center;
+        padding    : 8px;
+    }
+
+
+    .search-personal{
+        /* border         : 1px solid red; */
+        display          : flex;
+        justify-content  : center;
+        flex-direction   : row;
+        color            : white;
+        text-align       : center;
+        width            : 50%;
+        height           : 45px;
+
+    }
+
+    /* Campo busqueda */
+    .content-searching{
+        /* border           : 1px solid red; */
+        background-color : hsl(243, 27%, 20%);
+        height           : 42px;
+        border-radius    : 8px;
+        padding          : 8px;
+        margin-top       : 0px;
+        color            :white;
+    }
+
+    .btn-personal{
+        /* border      : 1px solid red; */
+        width       : 20%;
+        height      : 40px;
+        margin-top  : 1px;
+        margin-left : 15px;
+    }
+
+    .form-text-personal::placeholder{
+        color            : white;
+    }
+
+    .form-text-personal{
+        /* border        : 1px solid red; */
+        border           : none;
+        background-color : hsl(243, 27%, 20%);
+        margin-top       : -6px;
+    }
+
+    /* Fondo de clima large */
+    .background-weather{
+        /* border            : 1px solid red; */
+        margin-left       : 1%;
+        margin-top        : 0px;
+        width             : 70%;
+        height            : 290px;
+        background-image  : url(../assets/images/bg-today-large.svg);
+        background-repeat : no-repeat;
+    }
+
+
+    /* Contenedor Tarjetas Feels like */
+    .contain-cards{
+        /* border       : 1px solid red; */
+        width        : 84.5%;
+        margin-top   : -18%;
+        margin-left  : -12.5%;
+    }
+
+    /* Color fondo y letra de cards */
+    .personal-card{
+        /* border           : 1px solid red; */
+        background-color : hsl(243, 27%, 20%);
+        color            : white;
+        border-radius    : 8px;
+        margin           : 100px;
+
+    }
+
+    .card-title{
+        font-size  : 13px;
+    }
+
+    .card-text{
+        font-size: 13px;
+    }
+
+    .card{
+        /* border     : 1px solid red; */
+        /* margin-right: -50px; */
+        margin     : -6px;
+        margin-left: -18px;
+        padding    : -5px;
+        width      : 120px;
+    }
+
+
+    .forecast-contain{
+        /* border          : 1px solid red; */
+        width           : 86%;
+        height          : 180px;
+        display         : flex;
+        flex-direction  : row;
+        justify-content : center;
+        margin-top      : -75px;
+        margin-left     : -80px;
+    }
+
+    .daily-text{
+        /* margin-left: 0px; */
+        font-size     : 16px;
+        margin-top    : -20px;
+        margin-bottom : -10px;
+        margin-left   : 0px;
+    }
+
+    /* Tarjetas daily forecast */
+    .card-daily{
+        /* border           : 1px solid red; */
+        width            : 73px;
+        height           : 105px;
+        background-color : hsl(243, 27%, 20%);
+        color            : white;
+        border-radius    : 8px;
+        margin-top       : 20px;
+        margin-right     : 8px;
+        padding          : 0px;
+        /* margin-left   : 1px; */
+    }
+
+    .temp{
+        font-size:8.5px;
+        /* margin-bottom: 0px; */
+    }
+
+    aside{
+        /* border  :1px solid red; */
+        width   : 100%;
+        padding : 20px;
+        /* flex: 1; */
+    }
+
+    .lateral{
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    /* Lienzo de las cards de cad ahora */
+    .hourly-cards{
+        /* border           : 1px solid red; */
+        margin-top: -25px;
+    }
+
+    .hourly-content{
+        /* border           : 1px solid red; */
+        background-color : hsl(243, 27%, 20%);
+        border-radius    : 15px;
+        width            : 29%;
+        height           : 624px;
+        margin-top       : -543px;
+        margin-right     : -20px;
+        font-size        : 15px;
+
+    }
+
+    .hourly-font{
+        /* border      : 1px solid red; */
+        font-size   : 14px;
+        margin-left : -12px;
+    }
+
+    /* Boton de selección de días en hourly forecast */
+    .days-personal{
+        /* border: 1px solid red; */
+        /* border           : none; */
+        background-color : hsl(243, 23%, 30%);
+        color            : white;
+        padding-top      : 4px;
+        padding-left     : 10px;
+        margin-top       : 10px;
+        font-size        : 12px;
+
+    }
+
+    .button-days{
+        /* border: 1px solid red; */
+        margin-top   : -4px;
+        margin-right : -15px;
+        height       : 30px;
+
+    }
+
+    .card-hourly{
+        /* border           : 1px solid red; */
+        display          : flex;
+        flex-direction   : row;
+        background-color : hsl(243, 23%, 30%);
+        color            : white;
+        width            : 100%;
+        height           : 38px;
+        margin-left      : 0px;
+        margin-top       : 15px;
+    }
+
+
+}
 
 /* Pantallas grandes */
-@media ( min-width: 900px ) {
+@media screen and ( min-width: 1024px ) {
     body {
         background-color : hsl(243, 96%, 9%);
         color            : white;
@@ -278,9 +558,9 @@
         text-align       : center;
         width            : 40%;
         height           : 45px;
-        
+
     }
-    
+
     /* Campo busqueda */
     .content-searching{
         /* border           : 1px solid red; */
@@ -387,7 +667,7 @@
         padding : 20px;
         /* flex: 1; */
     }
-    
+
     .lateral{
         /* border: 1px solid red; */
         display: flex;
@@ -396,10 +676,10 @@
     }
 
     /* Lienzo de las cards de cad ahora */
-    .hourly-cards{
-        /* border           : 1px solid red; */
+    /* .hourly-cards{
+        border           : 1px solid red;
 
-    }
+    } */
 
     .hourly-content{
         /* border           : 1px solid red; */
@@ -409,7 +689,7 @@
         height           : 624px;
         margin-top       : -645px;
         margin-right     : 140px;
-    
+
     }
 
     /* Boton de selección de días en hourly forecast */
