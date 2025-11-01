@@ -514,9 +514,10 @@
 
 
     .title{
+        /* border: 1px solid red; */
         display         : flex;
         justify-content : space-between;
-        padding         : 15px
+        padding         : 15px;
     }
 
     .units-personal{
@@ -528,13 +529,21 @@
     }
 
     .units-personal-content{
-        /* border        : 1px solid red; */
+        /* border           : 1px solid red; */
         background-color : hsl(243, 27%, 20%);
         color            : white;
         padding          : 10px;
         font-size        : 15px;
     }
 
+    .color-test{
+        color:white;
+    }
+    .color-test:hover{
+        background-color: hsl(243, 23%, 30%);
+        border-radius: 8px;
+        color:white;
+    }
 
     /* Icono encabezado */
     .weather-img{
@@ -676,10 +685,11 @@
     }
 
     /* Lienzo de las cards de cad ahora */
-    /* .hourly-cards{
-        border           : 1px solid red;
-
-    } */
+    .hourly-cards{
+        /* border           : 1px solid red; */
+        width            : 100%;
+        padding          : 12px;
+    }
 
     .hourly-content{
         /* border           : 1px solid red; */
@@ -688,7 +698,7 @@
         width            : 25%;
         height           : 624px;
         margin-top       : -645px;
-        margin-right     : 140px;
+        margin-right     : 135px;
 
     }
 
@@ -698,15 +708,16 @@
         border           : none;
         background-color : hsl(243, 23%, 30%);
         color            : white;
-        padding-top      : 4px;
-        padding-left     : 10px;
-        margin-top       : -5px;
+        /* padding-top      : 4px; */
+        /* padding-left     : 10px; */
+        /* margin-top       : 0px; */
 
     }
+    
 
     .button-days{
         margin-top  : -3px;
-        height      : 35px;
+        height      : 30px;
     }
 
     .card-hourly{
@@ -721,17 +732,43 @@
 
     }
 
-    /* .flexing{
-        border: 1px solid red;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: -11px;
-        margin-left: 25px;
-    } */
+    .custom-select-wrapper {
+        top      : -1px;
+        position : relative;
+        display  : inline-block;
+        width    : 140px; 
+    }
 
+    .custom-select-wrapper select {
+        appearance         : none;
+        -webkit-appearance : none;
+        -moz-appearance    : none;
+        background-color   : transparent;
+        border             : none;
+        font-family        : inherit;
+        font-size          : 0.8rem;
+        color              : inherit;
+        padding-top        : 0rem;
+        width              : 100%;
+        cursor             : pointer;
+    }
+    
+    .custom-select-wrapper .icon-dropdown {
+        position       : absolute;
+        right          : 0.6rem;
+        top            : 38%;
+        transform      : translateY(-50%);
+        pointer-events : none;
+        width          : 0.7rem;
+        height         : auto;
+    }
 
+    .days-personal.button-days {
+        background-color : hsl(243, 23%, 30%);
+        border-radius    : 8px;
+        border           : none;
 
+    }
 
 
 }

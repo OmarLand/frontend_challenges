@@ -34,16 +34,16 @@
       
       <ul class="dropdown-menu units-personal-content">
       
-        <li><a href="#" class="dropdown-item"></a>Switch to Imperial/Metric</li>
-        <li><a href="#" class="dropdown-item"></a>Temperature</li>
-        <li><a href="#" class="dropdown-item"></a>Celsius (°C)</li>
-        <li><a href="#" class="dropdown-item"></a>Fahrenheit (°F)</li>
-        <li><a href="#" class="dropdown-item"></a>Wind Speed</li>
-        <li><a href="#" class="dropdown-item"></a>km/h</li>
-        <li><a href="#" class="dropdown-item"></a>mph</li>
-        <li><a href="#" class="dropdown-item"></a>Precipitation</li>
-        <li><a href="#" class="dropdown-item"></a>Millimeters (mm)</li>
-        <li><a href="#" class="dropdown-item"></a>Inches (in)</li>
+        <li><a href="#" class="dropdown-item color-test">Switch to Imperial/Metric</a></li>
+        <li><a href="#" class="dropdown-item color-test">Temperature</a></li>
+        <li><a href="#" class="dropdown-item color-test">Celsius (°C)</a></li>
+        <li><a href="#" class="dropdown-item color-test">Fahrenheit (°F)</a></li>
+        <li><a href="#" class="dropdown-item color-test">Wind Speed</a></li>
+        <li><a href="#" class="dropdown-item color-test">km/h</a></li>
+        <li><a href="#" class="dropdown-item color-test">mph</a></li>
+        <li><a href="#" class="dropdown-item color-test">Precipitation</a></li>
+        <li><a href="#" class="dropdown-item color-test">Millimeters (mm)</a></li>
+        <li><a href="#" class="dropdown-item color-test">Inches (in)</a></li>
 
       </ul>
 
@@ -77,8 +77,6 @@
     <section>
   
       <div class="background-weather"></div>
-  
-        <!-- <br> -->
         
         <article class="article-1">
   
@@ -226,56 +224,51 @@
         <aside class="lateral">
           <!-- BEGIN - Hourly forecast -->
           <div class="hourly-content">
-              <!-- Insert hourly forecast for the selected day here -->
-
-              <div class="dropdown title">
-                
-                <p class="hourly-font"> Hourly forecast </p>
-                <button class="btn btn-secondary days-personal button-days" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Tusday
-                  <img src="./assets/images/icon-dropdown.svg" alt="">
-                </button>
-                
-                <ul class="dropdown-menu days-personal">
-                
-                  <li><a href="#" class="dropdown-item"></a>Sunday</li>
-                  <li><a href="#" class="dropdown-item"></a>Monday</li>
-                  <li><a href="#" class="dropdown-item"></a>Tusday</li>
-                  <li><a href="#" class="dropdown-item"></a>Wednesday</li>
-                  <li><a href="#" class="dropdown-item"></a>Thursday</li>
-                  <li><a href="#" class="dropdown-item"></a>Friday</li>
-                  <li><a href="#" class="dropdown-item"></a>Saturday</li>
-                
-                </ul>
+            <div class="dropdown title">
                   
+              <p class="hourly-font"> Hourly forecast </p>
+
+              <div class="custom-select-wrapper">
+                  <select class="days-personal button-days" id="day-select" aria-label="Select day">
+                    <option value="sunday">Sunday</option>
+                    <option value="monday">Monday</option>
+                    <option value="tuesday" selected>Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                    <option value="saturday">Saturday</option>
+                  </select>
+                  <img src="./assets/images/icon-dropdown.svg" alt="" class="icon-dropdown">
               </div>
-                
-              <div class="hourly-cards">
-                  <div class="card card-hourly">
-                    <div class="card-body flexing">
-                      <p class="card-title">Icon</p>
-                      <p class="card-text">time</p>
-                      <p class="card-text">99º</p>
-                    </div>
-                  </div>
+            </div>
+                  
+            <div class="hourly-cards">
+              <div class="card card-hourly">
+                <div class="card-body flexing">
+                  <p class="card-title">Icon</p>
+                  <p class="card-text">time</p>
+                  <p class="card-text">99º</p>
+                </div>
+              </div>
 
-                  <div class="card card-hourly">
-                    <div class="card-body flexing">
-                      <p class="card-title">Icon</p>
-                      <p class="card-text">time</p>
-                      <p class="card-text">99º</p>
-                    </div>
-                  </div>
+              <div class="card card-hourly">
+                <div class="card-body flexing">
+                  <p class="card-title">Icon</p>
+                  <p class="card-text">time</p>
+                  <p class="card-text">99º</p>
+                </div>
+              </div>
 
-                  <div class="card card-hourly">
-                    <div class="card-body flexing">
-                      <p class="card-title">Icon</p>
-                      <p class="card-text">time</p>
-                      <p class="card-text">99º</p>
-                    </div>
-                  </div>
-               </div>
-             </div>
+              <div class="card card-hourly">
+                <div class="card-body flexing">
+                  <p class="card-title">Icon</p>
+                  <p class="card-text">time</p>
+                  <p class="card-text">99º</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
           </div>
         </aside>
     
