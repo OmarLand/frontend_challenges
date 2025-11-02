@@ -24,9 +24,31 @@
     }
 
     .units-personal-content{
-        /* border        : 1px solid red; */
-        padding       : 10px;
-        font-size     : 15px;
+        /* border           : 1px solid red; */
+        background-color : hsl(243, 27%, 20%);
+        color            : white;
+        padding          : 10px;
+        font-size        : 14px;
+    }
+
+    .color-test{
+        color: white;
+    }
+
+    .color-test:hover{
+        background-color : hsl(243, 23%, 30%);
+        border-radius    : 8px;
+        color            :white;
+    }
+
+    .separator{
+        border  : 1px solid #D1D1D1;
+        margin  : 15px;
+        opacity : 0.1;
+    }
+
+    .title-units-items{
+        font-size: 10px;
     }
 
     .btn-personal{
@@ -45,6 +67,10 @@
         padding    : 8px;
     }
 
+    .title-page{
+        font-size: 40px;
+    }
+
     .search-personal{
         /* border: 1px solid red; */
         color          : white;
@@ -59,22 +85,25 @@
         /* border: 1px solid red; */
         background-color : hsl(243, 27%, 20%);
         width            : 100%;
-        height           : 55px;
+        height           : 40px;
         border-radius    : 8px;
         padding          : 8px;
-        margin-top       : 10px;
+        margin-top       : 0px;
         color            :white;
 
+    }
+    
+    .form-text-personal{
+        /* border           : 1px solid red; */
+        background-color : hsl(243, 27%, 20%);
+        margin-top       : -7px;
+        margin-left      : 10px;
+        width            : 100%;
+        border           : none;
     }
 
     .form-text-personal::placeholder{
         color            : white;
-    }
-
-    .form-text-personal{
-        background-color : hsl(243, 27%, 20%);
-        border           : none;
-
     }
 
     .background-weather{
@@ -91,12 +120,10 @@
 
     /* Tarjetas */
     .contain-cards{
-        /* border     : 3px solid red; */
-        padding    : 5px;
-        margin-top : -10px;
-        /* width: 80%; */
-
-
+        /* border     : 1px solid red; */
+        padding    : 0px;
+        margin     : 0px;
+        margin-top : 15px;
     }
 
     .personal-card{
@@ -117,19 +144,25 @@
     }
 
     .forecast-contain{
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
+        display        : flex;
+        flex-direction : column;
+        margin         : 20px;
+    }
+
+    .daily-text{
+        margin-top    : -5px;
+        margin-bottom : 10px;
+        margin-left   : -5px;
     }
 
     .card-daily{
         /* border           : 1px solid red; */
-        width            : 95px;
+        width            : 90px;
         background-color : hsl(243, 27%, 20%);
         color            : white;
         border-radius    : 8px;
-        margin-top: 2px;
-        padding          : 5px;
+        margin-top       : 8px;
+        padding          : 0px;
     }
 
     .temp{
@@ -142,10 +175,11 @@
     }
 
     .hourly-content{
-        /* border: 1px solid red; */
+        /* border           : 1px solid red; */
         background-color : hsl(243, 27%, 20%);
         border-radius    : 8px;
         padding          : 8px;
+        margin           : 15px;
     }
 
     .days-personal{
@@ -183,10 +217,47 @@
         margin-top: -11px;
     }
 
+    .custom-select-wrapper {
+        top      : -1px;
+        position : relative;
+        display  : inline-block;
+        width    : 140px; 
+    }
+
+    .custom-select-wrapper select {
+        appearance         : none;
+        -webkit-appearance : none;
+        -moz-appearance    : none;
+        background-color   : transparent;
+        border             : none;
+        font-family        : inherit;
+        font-size          : 0.8rem;
+        color              : inherit;
+        padding-top        : 0rem;
+        width              : 100%;
+        cursor             : pointer;
+    }
+    
+    .custom-select-wrapper .icon-dropdown {
+        position       : absolute;
+        right          : 0.6rem;
+        top            : 38%;
+        transform      : translateY(-50%);
+        pointer-events : none;
+        width          : 0.7rem;
+        height         : auto;
+    }
+
+    .days-personal.button-days {
+        background-color : hsl(243, 23%, 30%);
+        border-radius    : 8px;
+        border           : none;
+    }
+
 }
 
 /* Pantallas tablets */
-@media (min-width: 768px) and (max-width: 1023px){
+@media (min-width: 768px) and (max-width: 900px){
     body {
         background-color : hsl(243, 96%, 9%);
         color            : white;
@@ -198,11 +269,11 @@
 
     section{
         /* border        : 1px solid red; */
-        width         : 100%;
-        margin-top    : 5px;
-        display       : flex;
-        flex-direction: column;
-        flex          : 3;
+        width          : 100%;
+        margin-top     : 5px;
+        display        : flex;
+        flex-direction : column;
+        flex           : 3;
         /* margin-right  : 20px; */
     }
 
@@ -217,18 +288,17 @@
     }
 
     .containing{
-        display:flex;
-        flex-direction: column;
-        height: 100%;
+        display         : flex;
+        flex-direction  : column;
+        height          : 100%;
     }
 
     .main-content{
         /* border: 1px solid red; */
-        display: flex;
-        flex   : 1;
-        padding: 20px;
+        display  : flex;
+        flex     : 1;
+        padding  : 20px;
     }
-
 
     .title{
         display         : flex;
@@ -236,20 +306,53 @@
         padding         : 15px
     }
 
+    .title-page{
+        font-size: 40px;
+    }
+
     .units-personal{
         /* border           : 1px solid red; */
-        background-color : hsl(243, 27%, 20%);
         border           : none;
+        background-color : hsl(243, 27%, 20%);
         color            : white;
         height           : 35px;
     }
 
     .units-personal-content{
-        /* border        : 1px solid red; */
+        /* border           : 1px solid red; */
         background-color : hsl(243, 27%, 20%);
-        color            : white;
-        padding          : 10px;
-        font-size        : 15px;
+        color            : #CBCBCB;
+        padding          : 0px;
+        font-size        : 13px;
+        
+    }
+
+    .color-test{
+        color  :white;
+    }
+
+    .color-test:hover{
+        background-color : hsl(243, 23%, 30%);
+        border-radius    : 8px;
+        color            :white;
+    }
+
+    .separator{
+        border  : 1px solid #D1D1D1;
+        margin  : 15px;
+        opacity : 0.1;
+    }
+    
+    .title-units-items{
+        font-size : 11px;
+        color     : #D1D1D1;
+    }
+
+    .title-units-items:hover{
+        font-size        : 11px;
+        background-color : #25253F;
+        color            : #D1D1D1;
+        cursor           : context-menu;
     }
 
 
@@ -265,7 +368,6 @@
         padding    : 8px;
     }
 
-
     .search-personal{
         /* border         : 1px solid red; */
         display          : flex;
@@ -273,25 +375,24 @@
         flex-direction   : row;
         color            : white;
         text-align       : center;
-        width            : 50%;
-        height           : 45px;
-
+        width            : 56%;
+        height           : 40px;
     }
 
     /* Campo busqueda */
     .content-searching{
         /* border           : 1px solid red; */
         background-color : hsl(243, 27%, 20%);
-        height           : 42px;
+        height           : 40px;
         border-radius    : 8px;
         padding          : 8px;
-        margin-top       : 0px;
+        margin-top       : 2px;
         color            :white;
     }
 
     .btn-personal{
         /* border      : 1px solid red; */
-        width       : 20%;
+        width       : 26%;
         height      : 40px;
         margin-top  : 1px;
         margin-left : 15px;
@@ -311,7 +412,7 @@
     /* Fondo de clima large */
     .background-weather{
         /* border            : 1px solid red; */
-        margin-left       : 1%;
+        margin-left       : 0%;
         margin-top        : 0px;
         width             : 70%;
         height            : 290px;
@@ -325,7 +426,7 @@
         /* border       : 1px solid red; */
         width        : 84.5%;
         margin-top   : -18%;
-        margin-left  : -12.5%;
+        margin-left  : -13.5%;
     }
 
     /* Color fondo y letra de cards */
@@ -343,22 +444,22 @@
     }
 
     .card-text{
-        font-size: 13px;
+        font-size  : 13px;
     }
 
     .card{
         /* border     : 1px solid red; */
         /* margin-right: -50px; */
-        margin     : -6px;
-        margin-left: -18px;
-        padding    : -5px;
-        width      : 120px;
+        margin      : -6px;
+        margin-left : -18px;
+        padding     : -5px;
+        width       : 120px;
     }
 
 
     .forecast-contain{
         /* border          : 1px solid red; */
-        width           : 86%;
+        width           : 84%;
         height          : 180px;
         display         : flex;
         flex-direction  : row;
@@ -390,7 +491,7 @@
     }
 
     .temp{
-        font-size:8.5px;
+        font-size   :8.5px;
         /* margin-bottom: 0px; */
     }
 
@@ -403,22 +504,22 @@
 
     .lateral{
         /* border: 1px solid red; */
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
+        display          : flex;
+        justify-content  : flex-end;
+        align-items      : flex-start;
     }
 
     /* Lienzo de las cards de cad ahora */
     .hourly-cards{
         /* border           : 1px solid red; */
-        margin-top: -25px;
+        margin-top   : -25px;
     }
 
     .hourly-content{
         /* border           : 1px solid red; */
         background-color : hsl(243, 27%, 20%);
         border-radius    : 15px;
-        width            : 29%;
+        width            : 30%;
         height           : 624px;
         margin-top       : -543px;
         margin-right     : -20px;
@@ -428,7 +529,7 @@
 
     .hourly-font{
         /* border      : 1px solid red; */
-        font-size   : 14px;
+        font-size   : 11px;
         margin-left : -12px;
     }
 
@@ -460,23 +561,66 @@
         background-color : hsl(243, 23%, 30%);
         color            : white;
         width            : 100%;
-        height           : 38px;
+        height           : 35px;
         margin-left      : 0px;
         margin-top       : 15px;
     }
+
+    .custom-select-wrapper {
+        top           : -3px;
+        left          : 10px;
+        position      : relative;
+        display       : inline-block;
+        width         : 98px;
+        margin-bottom : 8px; 
+    }
+
+    .custom-select-wrapper select {
+        appearance         : none;
+        -webkit-appearance : none;
+        -moz-appearance    : none;
+        background-color   : transparent;
+        border             : none;
+        font-family        : inherit;
+        font-size          : 0.8rem;
+        color              : inherit;
+        padding-top        : 0rem;
+        width              : 100%;
+        cursor             : pointer;
+    }
+    
+    .custom-select-wrapper .icon-dropdown {
+        position       : absolute;
+        right          : 0.6rem;
+        top            : 50%;
+        transform      : translateY(-50%);
+        pointer-events : none;
+        width          : 0.7rem;
+        height         : auto;
+    }
+
+    .days-personal.button-days {
+        background-color : hsl(243, 23%, 30%);
+        border-radius    : 8px;
+        border           : none;
+
+    }
+
 
 
 }
 
 /* Pantallas grandes */
-@media screen and ( min-width: 1024px ) {
+@media ( min-width: 901px ) {
     body {
+        /* border: 1px solid red; */
         background-color : hsl(243, 96%, 9%);
         color            : white;
         font-size        : 18px;
         padding          : 0px;
         margin           : 0px;
         height           : 100%;
+        width            : 100%;
     }
 
     section{
@@ -539,10 +683,28 @@
     .color-test{
         color:white;
     }
+
     .color-test:hover{
         background-color: hsl(243, 23%, 30%);
         border-radius: 8px;
         color:white;
+    }
+
+    .separator{
+        border  : 1px solid #D1D1D1;
+        opacity : 0.1;
+    }
+    
+    .title-units-items{
+        font-size : 11px;
+        color     : #D1D1D1;
+    }
+
+    .title-units-items:hover{
+        font-size        : 11px;
+        background-color : #25253F;
+        color            : #D1D1D1;
+        cursor           : context-menu;
     }
 
     /* Icono encabezado */
@@ -627,9 +789,9 @@
         margin           : 1px;
     }
 
-    .card-title{
+    /* .card-title{
         font-size  : 15px;
-    }
+    } */
 
     .card{
         /* border     : 1px solid red; */
@@ -693,12 +855,15 @@
 
     .hourly-content{
         /* border           : 1px solid red; */
-        background-color : hsl(243, 27%, 20%);
+        /* background-color : hsl(243, 27%, 20%); */
+        background-color : #25253F;
         border-radius    : 15px;
         width            : 25%;
-        height           : 624px;
-        margin-top       : -645px;
-        margin-right     : 135px;
+        height           : 639px;
+        /* margin-top    : -655px; */
+        margin-top       : -46.4%;
+        /* margin-right  : 135px; */
+        margin-right     : 9.7%;
 
     }
 
@@ -724,7 +889,7 @@
         /* border           : 1px solid red; */
         display          : flex;
         flex-direction   : row;
-        background-color : hsl(243, 23%, 30%);
+        background-color : #2F2F49;
         color            : white;
         width            : 100%;
         height           : 45px;
@@ -767,7 +932,6 @@
         background-color : hsl(243, 23%, 30%);
         border-radius    : 8px;
         border           : none;
-
     }
 
 
