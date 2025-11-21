@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     getDaily( city );
     renderCityDataCurrent( city );
     renderCurrent( city );
+    // getCodeWeather(city)
 
 })
 
@@ -41,6 +42,19 @@ const getCurrent = async(location) => {
         .catch(error => console.log('error...:', error) )       
 }
 
+//TODO Implementar Función para mostrar los iconos segun el clima
+const getCodeWeather = async(location) => {
+    const weatherCode = await getCurrent(location);
+    const { weather_code } = weatherCode.current;
+    // console.log( `Codigo del Clima: ${weather_code}` );
+
+    if( weather_code === 2 ){
+       console.log('Partly Cloudy');
+       
+    }
+
+}
+
 //Renderizamos en HTML Datos actuales del Clima en el Background
 const renderCityDataCurrent = async(city) => {
     const cityName = await getCity(city);
@@ -51,7 +65,7 @@ const renderCityDataCurrent = async(city) => {
     const { temperature_2m } = gettingMainWeather.current
     // console.log( `Grados: ${temperature_2m} ºC` );
     
-    // Obtenemos la fecha actual del sistema y no del API
+    // Obtenemos la fecha actual del sistema y no del API y formateamos
     const fecha = new Date().toLocaleDateString("en-US", {
         weekday : "long",
         day     : "numeric",
@@ -64,8 +78,7 @@ const renderCityDataCurrent = async(city) => {
             <div class="name-city">${name}, ${country}</div>
             <div class="current-date">${ fecha }</div>
         </div>
-        <div class="current-temp">${Math.round(temperature_2m)} ºC</div>
-
+        <div class="current-temp">${ Math.round(temperature_2m)} ºC</div>
     `
 
     document.getElementsByClassName('background-weather background-weather-flex')[0].innerHTML = html;
@@ -126,11 +139,10 @@ const renderCurrent = async(location) => {
 
 // Obtenemos la información del clima por días
 const getDaily = async(location) => {
+
     const getDailyWeather = await getCity(location);
     const { longitude, latitude } = getDailyWeather;
-
     const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&daily=weather_code,temperature_2m_max,temperature_2m_min`    
-    
     console.log( 'URL: ', url );
 
     fetch(url)
@@ -139,3 +151,8 @@ const getDaily = async(location) => {
         .catch( error => console.log( 'Ha ocurrido un error: getDaily', error ) )
 
 }
+
+// const renderDaily = (location) => {
+//     const getDataDay = getDaily(location);
+//     const {  } = getDataDay
+// }
