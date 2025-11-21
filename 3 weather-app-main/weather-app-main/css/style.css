@@ -773,11 +773,34 @@
         background-repeat : no-repeat;
     }
 
+    .background-weather-flex{
+        display         : flex;
+        justify-content : space-between;
+        align-items     : center;
+        padding         : 20px;
+
+    }
+
+    .name-city{
+        font-size   : 25px;
+        font-weight : 600;
+        font-style  : italic;
+    }
+
+    .current-temp{
+        font-size   : 75px;
+        font-weight : 500;
+        font-style  : italic;
+    }
+
+    .current-date{
+        font-style: italic;
+    }
 
     /* Contenedor Tarjetas Feels like */
     .contain-cards{
         /* border      : 1px solid red; */
-        width: 62%;
+        width  : 62%;
     }
 
     /* Color fondo y letra de cards */
@@ -789,10 +812,6 @@
         margin           : 1px;
     }
 
-    /* .card-title{
-        font-size  : 15px;
-    } */
-
     .card{
         /* border     : 1px solid red; */
         margin     : 5px;
@@ -803,15 +822,15 @@
 
     .forecast-contain{
         /* border: 1px solid red; */
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: -30px;
-        margin-left: 18px;
+        display         : flex;
+        flex-direction  : row;
+        justify-content : center;
+        margin          : -30px;
+        margin-left     : 18px;
     }
 
     .daily-text{
-        margin-left: 0px;
+        margin-left : 0px;
     }
 
     /* Tarjetas daily forecast */
@@ -824,45 +843,40 @@
         margin-right     : 16px;
         margin-left      : -12px;
         margin-top       : 0px;
-        /* padding          : 0px; */
     }
 
     .temp{
-        font-size: 12px;
-        margin-bottom: 5px;
+        font-size     : 12px;
+        margin-bottom : 5px;
     }
 
     aside{
         /* border  :1px solid red; */
         width   : 100%;
         padding : 20px;
-        /* flex: 1; */
     }
 
     .lateral{
         /* border: 1px solid red; */
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
+        display         : flex;
+        justify-content : flex-end;
+        align-items     : flex-start;
     }
 
     /* Lienzo de las cards de cad ahora */
     .hourly-cards{
-        /* border           : 1px solid red; */
+        /* border        : 1px solid red; */
         width            : 100%;
         padding          : 12px;
     }
 
     .hourly-content{
         /* border           : 1px solid red; */
-        /* background-color : hsl(243, 27%, 20%); */
         background-color : #25253F;
         border-radius    : 15px;
         width            : 25%;
         height           : 639px;
-        /* margin-top    : -655px; */
         margin-top       : -46.4%;
-        /* margin-right  : 135px; */
         margin-right     : 9.7%;
 
     }
@@ -873,10 +887,6 @@
         border           : none;
         background-color : hsl(243, 23%, 30%);
         color            : white;
-        /* padding-top      : 4px; */
-        /* padding-left     : 10px; */
-        /* margin-top       : 0px; */
-
     }
     
 
@@ -933,6 +943,5 @@
         border-radius    : 8px;
         border           : none;
     }
-
 
 }

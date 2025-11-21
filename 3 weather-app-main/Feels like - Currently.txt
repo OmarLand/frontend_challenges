@@ -1,0 +1,18 @@
+Feels like - Currently:
+"https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=weather_code,temperature_2m,apparent_temperature,wind_speed_10m,precipitation,relative_humidity_2m"
+
+Hourly Forecast:
+"https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=weather_code,temperature_2m"
+
+Daily Forecast:
+"https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&daily=weather_code,temperature_2m_max,temperature_2m_min"
+
+Weather Code References (who code):
+0 : Clear Sky
+1 : Mainly clear
+2 : Partly Cloudy
+3 : Overcast
+45: Fog
+61, 63, 65 : Soft Rain
+71, 73, 75 : Snow
+80, 81, 82 : Strong Rain
